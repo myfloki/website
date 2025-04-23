@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myfloki</title>
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon.ico?t=_" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Myfloki" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 class="downloader-headline">
+            <img src="assets/logo_horns.png" alt="Myfloki Logo" class="myfloki-logo">
+        </h1>
+
+        Everything you need to get started with Flokicoin — all in one place and ready to plug and play.
+
+        <h2 class="section-title">Downloader</h2>
+        <p class="section-description">This offers you to be up to date with the latest tools for the Flokicoin Core project: <a href="https://github.com/flokiorg/fcli" target="_blank">fcli</a>, <a href="https://github.com/flokiorg/tWallet" target="_blank">tWallet</a>, <a href="https://github.com/flokiorg/grpc-miner" target="_blank">gminer</a>, <a href="https://github.com/flokiorg/go-flokicoin" target="_blank">flokicoind & flokicoin-cli</a>.</p>
+
+        <div class="tabs">
+            <button class="tab-button active" data-tab="curl">via curl</button>
+            <button class="tab-button" data-tab="wget">via wget</button>
+        </div>
+
+        <div class="tab-content active" id="curl">
+            <div class="code-container">
+                <pre><code>sh -c "$(curl -fsSL https://raw.githubusercontent.com/myfloki/community-tools/main/downloader.sh)"</code></pre>
+                <button class="copy-button" data-clipboard-text='sh -c "$(curl -fsSL https://raw.githubusercontent.com/myfloki/community-tools/main/downloader.sh)"'>
+                    <svg class="copy-icon" viewBox="0 0 24 24">
+                        <path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="tab-content" id="wget">
+            <div class="code-container">
+                <pre><code>sh -c "$(wget https://raw.githubusercontent.com/myfloki/community-tools/main/downloader.sh -O -)"</code></pre>
+                <button class="copy-button" data-clipboard-text='sh -c "$(wget https://raw.githubusercontent.com/myfloki/community-tools/main/downloader.sh -O -)"'>
+                    <svg class="copy-icon" viewBox="0 0 24 24">
+                        <path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <p class="install-note">
+            <strong>Note:</strong> recommended for macOS or Linux.
+        </p>
+
+        <section class="community-boost">
+            <h2>Community Boost</h2>
+            <p class="section-description">Join the movement, strengthen the network, and earn your place in Flokicoin history.            </p>
+            <div class="boost-options">
+                <div class="boost-box full-node">
+                    <a href="https://github.com/myfloki/fullnode" target="_blank" class="boost-link">
+                        <div class="boost-header">
+                            <h3>Full Node</h3>
+                            <div class="box-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,4.17V2H4V4.17C2.83,5.05 2,6.43 2,8C2,8.7 2.16,9.37 2.43,10H4.57C4.21,9.45 4,8.76 4,8C4,6.9 4.56,5.94 5.43,5.34C6.3,4.73 7.43,4.58 8.45,4.8L9.13,4.25C8,3.25 6.5,2.67 5,2.67C4,2.67 3.04,2.94 2.21,3.47L2,3.33V2H22V3.33L21.79,3.47C20.96,2.94 20,2.67 19,2.67C17.5,2.67 16,3.25 14.87,4.25L15.55,4.8C16.57,4.58 17.7,4.73 18.57,5.34C19.44,5.94 20,6.9 20,8C20,8.76 19.79,9.45 19.43,10H21.57C21.84,9.37 22,8.7 22,8C22,6.43 21.17,5.05 20,4.17M12,20A8,8 0 0,0 4,12A8,8 0 0,0 12,4A8,8 0 0,0 20,12A8,8 0 0,0 12,20Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p>Run your own node and help keep Flokicoin strong, fast, and fully decentralized. Just the way we like it.                        </p>
+                    </a>
+                </div>
+                <div class="boost-box operator">
+                     <a href="https://github.com/myfloki/operator" target="_blank" class="boost-link">
+                         <div class="boost-header">
+                             <h3>Operator</h3>
+                             <div class="box-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                     <path d="M12 3C14.21 3 16 4.79 16 7V9H19C20.11 9 21 9.9 21 11V20C21 21.11 20.11 22 19 22H5C3.89 22 3 21.11 3 20V11C3 9.9 3.89 9 5 9H8V7C8 4.79 9.79 3 12 3M12 5C10.9 5 10 5.9 10 7V9H14V7C14 5.9 13.11 5 12 5M5 11V20H19V11H5Z" />
+                                </svg>
+                             </div>
+                         </div>
+                        <p>Run your own Electrum server to boost wallet privacy, reduce reliance on public nodes, and help support the Flokicoin network.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script type="importmap">
+    {
+      "imports": {}
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
